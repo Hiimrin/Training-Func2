@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 9</title>
+</head>
+<body>
+<script>
+    var maxArray = prompt("Nhap do dai mang: ");
+
+    function search() {
+        if (maxArray == parseInt(maxArray) && maxArray > 0) {
+            let array = [];
+            let dem = 0;
+            for (let i = 0; i < maxArray; i++) {
+                array.push(prompt("Nhap phan tu: "));
+            }
+            let char = prompt("Nhap ki tu : ");
+            for (let i = 0; i < array.length; i++) {
+                if (array[i] === char) {
+                    dem++;
+                }
+            }
+            if(dem !== 0){
+                document.write("Ki tu " + char + "co" + dem + "vi tri ");
+            }else{
+                document.write("Ki tu  " + char + " khong thay ");
+                return -1;
+            }
+
+        }else {
+            alert("Nhap so lon hon 0 ");
+
+        }
+    }
+
+    search();
+</script>
+
+</body>
+</html>

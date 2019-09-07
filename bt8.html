@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 8</title>
+</head>
+<body>
+
+</body>
+<script>
+    var maxArray = prompt("Nhap do dai mang: ");
+
+    function reverse() {
+        if (maxArray == parseInt(maxArray) && maxArray > 0) {
+            let array = [];
+            for (let i = 0; i < maxArray; i++) {
+                array.push(prompt("Nhập: "));
+            }
+            document.write(array);
+            document.write("<br>");
+            let reserveArray = array.reverse().join("-");
+            document.write("Mang da duoc dao nguoc : " + reserveArray);
+        }else {
+            alert("Nhap so vao");
+        }
+    }
+
+    reverse();
+</script>
+</html>
